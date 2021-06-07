@@ -23,3 +23,28 @@
 2021-06-07 16:34:12,470 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-07 16:34:12,479 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
 2021-06-07 16:34:12,487 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 5 ms
+2021-06-07 16:55:17,045 INFO org.springframework.boot.StartupInfoLogger [main] Starting PersonProjectApplication using Java 1.8.0_241 on DESKTOP-JGO93AK with PID 12072 (C:\Users\alkan\OneDrive\Masaüstü\MyGithub\Person\Person_SpringBoot_React\Backend\PersonProject\target\classes started by alkan in C:\Users\alkan\OneDrive\Masaüstü\MyGithub\Person\Person_SpringBoot_React\Backend\PersonProject)
+2021-06-07 16:55:17,060 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2021-06-07 16:55:18,433 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-07 16:55:18,548 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interfaces.
+2021-06-07 16:55:19,727 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-06-07 16:55:19,736 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-06-07 16:55:19,736 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-07 16:55:19,983 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-06-07 16:55:19,983 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2807 ms
+2021-06-07 16:55:20,315 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-07 16:55:20,399 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-07 16:55:20,854 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-07 16:55:21,202 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-06-07 16:55:21,640 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-06-07 16:55:21,671 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-06-07 16:55:29,178 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-07 16:55:29,224 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-07 16:55:30,131 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-07 16:55:30,662 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-07 16:55:30,662 INFO org.springframework.boot.StartupInfoLogger [main] Started PersonProjectApplication in 14.846 seconds (JVM running for 17.539)
+2021-06-07 16:55:30,662 INFO org.springframework.boot.availability.ApplicationAvailabilityBean [main] Application availability state LivenessState changed to CORRECT
+2021-06-07 16:55:30,677 INFO org.springframework.boot.availability.ApplicationAvailabilityBean [main] Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-07 16:56:45,358 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-07 16:56:45,358 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-06-07 16:56:45,362 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
