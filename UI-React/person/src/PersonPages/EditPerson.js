@@ -15,8 +15,7 @@ class EditPerson extends React.Component {
             phone: null,
             email: null,
             deleted: null,
-            messages: [],
-            tempPerson: null
+            messages: []
 
         }
         this.PostUpdate = this.PostUpdate.bind(this);
@@ -146,26 +145,19 @@ class EditPerson extends React.Component {
                             />
                         </div>
 
-                        <div className="form-group">
+                        <div>
+                            {this.state.deleted
 
-                            {this.deleted = "true" ?
+                                ?
                                 <div>
-                                    <input checked={true} type="radio" name="deleted" value="true" onChange={this.onChange} />Deleted
-                                    <input type="radio" name="deleted" value="false" onChange={this.onChange} /> Non-Deleted
+                                    <input type="checkbox" name="deleted" value={false} onChange={this.onChange} />  Non-Deleted
                                 </div>
                                 :
                                 <div>
-                                    <input type="radio" name="deleted" value="true" onChange={this.onChange} /> Deleted
-                                    <input checked={true}  type="radio" name="deleted" value="false" onChange={this.onChange} />  Non-Deleted
+
                                 </div>
-                               
                             }
-
-                         
-
-
-
-                            </div>
+                        </div>
 
 
                         <div onChange={this.onChange} className="text-center">

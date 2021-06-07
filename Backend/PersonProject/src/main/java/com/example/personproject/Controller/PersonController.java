@@ -87,11 +87,15 @@ public class PersonController {
 
     @CrossOrigin
     @PostMapping("api/1.0/Person/Delete/{id}")
-    public String DeletePerson(@PathVariable Integer id) {
+    public Boolean DeletePerson(@PathVariable Integer id) {
+
+        if(personService.FindById(id).getDeleted()==true){
+            return false;
+        }
 
         personService.Delete(id);
 
-    return "Silme işlemi gerçekleşti";
+        return true;
     }
 
     @CrossOrigin
@@ -106,10 +110,8 @@ public class PersonController {
     @CrossOrigin
     @GetMapping("api/1.0/Person/GetId/{id}")
     public Person GetIdPerson(@PathVariable Integer id) {
-
-Person tempperson= personService.FindById(id);
-
-        return tempperson;
+        
+        return personService.FindById(id);
     }
 
 }

@@ -27,10 +27,27 @@ class ListPerson extends Component {
     }
 
     deletePerson(id){
-        axios.post('http://localhost:8080/api/1.0/Person/Delete/'+id);
-        alert("Deleted is Succesfully");
-        this.componentDidMount();
+        axios.get('http://localhost:8080/api/1.0/Person/GetId/' + id).then((res) => {
 
+            if (!res.data.deleted) {
+              
+                const confirmBox = window.confirm(
+                    "Do you  want to delete this person?"
+                )
+                if (confirmBox === true) {
+                    axios.post('http://localhost:8080/api/1.0/Person/Delete/' + id).then(response => {
+
+                        alert("Deleted is Succesfully");
+
+                    })
+                }
+                
+            } else {
+                alert("Person has already deleted");
+
+            }
+
+        });
     }
     editPerson(id){
         this.props.history.push(`/edit-person/${id}`);
@@ -77,7 +94,7 @@ class ListPerson extends Component {
                                                 <td>{person.email}</td>
                                                 <td>
                                                     <button className="btn btn-info" onClick={() => this.editPerson(person.id)}> Edit</button>
-                                                    <button style={{ marginLeft: "10px" }} className="btn btn-danger" onClick={() => this.deletePerson(person.id)}> Delete</button>
+                                                    <button style={{ marginLeft: "10px" }} className="btn btn-danger" onClick={() => { this.deletePerson(person.id) }}> Delete</button>
 
                                                 </td>
 
